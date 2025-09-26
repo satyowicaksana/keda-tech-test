@@ -1,6 +1,11 @@
 .home-container {
   min-height: 100vh;
   padding: 24px;
+  position: relative;
+
+  p {
+    color: #5d5d5d;
+  }
 
   .description-container {
     margin-top: 80px;
@@ -18,8 +23,26 @@
       width: 240px;
     }
 
-    @media (max-width: 992px) {  //lg
+    @media (max-width: 992px) {
       text-align: unset;
+    }
+  }
+
+  .blob {
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  .circles {
+    position: absolute;
+    bottom: 100px;
+    right: 500px;
+    width: 400px;
+    @media (max-width: 992px) {
+      display: none;
     }
   }
 }

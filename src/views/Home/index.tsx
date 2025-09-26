@@ -1,4 +1,6 @@
 import IllustrationGraph from "../../assets/illustration-graph.png"
+import Blob from "../../assets/blob-2.svg"
+import Circles from "../../assets/circles.svg"
 import './Home.scss'
 
 const Home = () => {
@@ -10,14 +12,24 @@ const Home = () => {
         </p>
       </div>
       <div className='illustration-container'>
-        <p>
-          Satu sistem, kendali penuh, untung maksimal.
+        <p className="slogan">
+          <i>Satu sistem, kendali penuh, untung maksimal.</i>
         </p>
         <img
           src={IllustrationGraph}
           alt="graph"
         />
       </div>
+      <img
+        src={Blob}
+        alt="blob"
+        className="blob"
+      />
+      <img
+        src={Circles}
+        alt="circles"
+        className="circles"
+      />
     </div>
   );
 }
