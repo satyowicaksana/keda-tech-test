@@ -1,4 +1,19 @@
+//custom
 .p-4 { padding: 16px; }
 .mb-4 { margin-bottom: 16px; }
 .mb-6 { margin-bottom: 24px; }
 .mt-2 { margin-top: 8px; }
+
+//overrides
+.ant-btn-link {
+  color: #000 !important;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  &:hover {
+    color: #555 !important; 
+  }
+  &:active {
+    color: #000 !important; 
+  }
+}
