@@ -5,11 +5,11 @@ import './Contact.scss'
 const Contact = () => {
   return (
     <div className='contact-container'>
-      <Row gutter={24}>
-        <Col className='description-container' span={12}>
+      <Row gutter={[24,24]}>
+        <Col className='description-container' xs={24} lg={12}>
           <div>
             <h1>Get In Touch</h1>
-            <h3>Contact us if you have any inquiries</h3>
+            <h3 className='mb-4'>Contact us if you have any inquiries</h3>
           </div>
           <Row justify='start'>
             <Col>
@@ -24,7 +24,7 @@ const Contact = () => {
             </Col>
           </Row>
         </Col>
-        <Col span={12}>
+        <Col xs={24} lg={12}>
           <Row gutter={16} className='mb-4'>
             <Col span={12}>
               <p>Nama Depan<span>*</span></p>

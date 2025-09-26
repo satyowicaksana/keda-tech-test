@@ -29,22 +29,22 @@ const Pricing = () => {
     <div className='pricing-container'>
       <h1>Choose Your Pricing Plan</h1>
       <h3 className='mb-6'>All Plans FREE for the first 30 Days</h3>
-      <Row className='cards-container' gutter={24}>
-        <Col span={8}>
+      <Row className='cards-container' gutter={[24,24]}>
+        <Col xs={24} lg={8}>
           <TierCard
             title="Basic"
             price="IDR 500.000"
             items={basicItems}
           />
         </Col>
-        <Col span={8}>
+        <Col xs={24} lg={8}>
           <TierCard
             title="Business"
             price="IDR 1.500.000"
             items={businessItems}
           />
         </Col>
-        <Col span={8}>
+        <Col xs={24} lg={8}>
           <TierCard
             title="Entrepreneur"
             price="IDR 3.000.000"
