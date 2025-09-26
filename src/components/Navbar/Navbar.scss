@@ -1,0 +1,47 @@
+.navbar-container {
+  padding: 24px 16px;
+
+  .logo-container {
+    position: relative;      /* relative container for absolute children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ant-btn-link {
+      position: relative;      /* stay in normal flow but above image */
+      font-size: 24px;
+      z-index: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #fff !important;
+    }
+
+    img {
+      position: absolute;
+      top: -300px;
+      left: -250px;
+      width: 500px;
+    }
+  }
+
+  .menu-container {
+    .ant-btn-link {
+      color: #000 !important;
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      &:hover {
+        color: #555 !important; 
+      }
+      &:active {
+        color: #000 !important; 
+      }
+    }
+  }
+
+  .login-button {
+    padding: 8px 48px;
+    font-weight: 600;
+  }
+}
+
