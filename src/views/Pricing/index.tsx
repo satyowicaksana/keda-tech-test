@@ -26,7 +26,7 @@ const entrepreneurItems = [
 
 const Pricing = () => {
   return (
-    <div className='pricing-container'>
+    <div id='pricing' className='pricing-container'>
       <h1>Choose Your Pricing Plan</h1>
       <h3 className='mb-6'>All Plans FREE for the first 30 Days</h3>
       <Row className='cards-container' gutter={[24,24]}>

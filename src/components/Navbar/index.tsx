@@ -4,6 +4,13 @@ import Blob from "../../assets/blob.svg"
 import { MenuOutlined } from '@ant-design/icons'
 import './Navbar.scss'
 
+const scrollToSection = (id: string) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { useBreakpoint } = Grid
@@ -42,17 +49,17 @@ const Navbar = () => {
               <Col>
                 <Row>
                   <Col>
-                    <Button type='link'>
+                    <Button type='link' onClick={() => scrollToSection('about')}>
                       About
                     </Button>
                   </Col>
                   <Col>
-                    <Button type='link'>
+                    <Button type='link' onClick={() => scrollToSection('pricing')}>
                       Pricing
                     </Button>
                   </Col>
                   <Col>
-                    <Button type='link'>
+                    <Button type='link' onClick={() => scrollToSection('contact')}>
                       Contact
                     </Button>
                   </Col>

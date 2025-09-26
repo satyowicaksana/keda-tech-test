@@ -4,7 +4,7 @@ import './Contact.scss'
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
+    <div id='contact' className='contact-container'>
       <Row gutter={[24,24]}>
         <Col className='description-container' xs={24} lg={12}>
           <div>
