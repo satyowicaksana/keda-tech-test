@@ -37,7 +37,7 @@ const Navbar = () => {
         className='navbar-container'
       >
         <Col className='logo-container'>
-          <Button type='link'>HOME</Button>
+          <Button type='link' onClick={() => scrollToSection('home')}>HOME</Button>
           <img
             src={Blob}
             alt="blob"

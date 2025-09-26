@@ -1,0 +1,25 @@
+.home-container {
+  min-height: 100vh;
+  padding: 24px;
+
+  .description-container {
+    margin-top: 80px;
+    p {
+      line-height: 2;
+    }
+  }
+  .illustration-container {
+    padding: 0 24px;
+    text-align: start;
+    margin-top: 80px;
+
+    img {
+      margin-top: 36px;
+      width: 240px;
+    }
+
+    @media (max-width: 992px) {  //lg
+      text-align: unset;
+    }
+  }
+}

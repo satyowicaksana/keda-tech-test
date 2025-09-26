@@ -1,22 +1,22 @@
-import IllustrationGraph from "../../assets/illustration-graph.png"
+import { Row, Col } from 'antd'
+import Client from "../../assets/clients.png"
+import Team from "../../assets/team.jpg"
 import './About.scss'
 
 const About = () => {
   return (
     <div id='about' className="about-container">
-      <div className='description-container'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div className='illustration-container'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <img
-          src={IllustrationGraph}
-          alt="graph"
-        />
+      <Row gutter={48}>
+        <Col span={12}>
+          <img src={Team} alt='team'/>
+        </Col>
+        <Col span={12}>
+          <h1>Siapa Kami</h1>
+          <p>Kami adalah startup yang berdedikasi untuk memudahkan pengusaha dalam mengelola bisnis mereka. Dengan platform terpadu kami, setiap pengusaha dapat mencatat barang masuk dan keluar, memantau keuntungan harian, dan menganalisis penjualan dengan mudah. Dari pelaku usaha kecil hingga entrepreneur yang ingin mengoptimalkan pertumbuhan bisnis, kami menyediakan berbagai TIER yang sesuai dengan kebutuhan — mulai dari pencatatan sederhana hingga fitur AI prediksi penghasilan. Misi kami adalah memberdayakan setiap bisnis agar lebih efisien, terkontrol, dan menguntungkan.</p>
+          <img src={Client} alt='client'/>
+        </Col>
+      </Row>
+      <div className='clients-container'>
       </div>
     </div>
   );
