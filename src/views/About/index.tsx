@@ -3,7 +3,7 @@ import './About.scss'
 
 const About = () => {
   return (
-    <>
+    <div className="about-container">
       <div className='description-container'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -18,7 +18,7 @@ const About = () => {
           alt="graph"
         />
       </div>
-    </>
+    </div>
   );
 }
 

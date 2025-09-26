@@ -1,0 +1,14 @@
+.tier-card {
+  h1 {
+    margin-bottom: 0;
+    font-weight: 800;
+  }
+  li {
+    text-align: start;
+    border-block-end: none !important;
+
+    svg {
+      color: #41c9ef;
+    }
+  }
+}
