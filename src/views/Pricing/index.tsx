@@ -27,8 +27,8 @@ const entrepreneurItems = [
 const Pricing = () => {
   return (
     <div id='pricing' className='pricing-container'>
-      <h1>Choose Your Pricing Plan</h1>
-      <h3 className='mb-6'>All Plans FREE for the first 30 Days</h3>
+      <h1>Pilih Paket Harga Anda</h1>
+      <h3 className='mb-6'>Pilih Rencana yang Sesuai untuk Bisnis Anda</h3>
       <Row className='cards-container' gutter={[24,24]}>
         <Col xs={24} lg={8}>
           <TierCard

@@ -8,8 +8,8 @@ const Contact = () => {
       <Row gutter={[24,24]}>
         <Col className='description-container' xs={24} lg={12}>
           <div>
-            <h1>Get In Touch</h1>
-            <h3 className='mb-4'>Contact us if you have any inquiries</h3>
+            <h1>Hubungi Kami</h1>
+            <h3 className='mb-4'>Kirim pesan pada form atau hubungi kami via Whatsapp/Email</h3>
           </div>
           <Row justify='start'>
             <Col>
