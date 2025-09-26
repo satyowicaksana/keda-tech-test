@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Row, Col, Button, Drawer, Menu, Grid } from 'antd'
+import { Row, Col, Button, Drawer, Menu, Grid, Modal, Input } from 'antd'
 import Blob from "../../assets/blob.svg"
 import { MenuOutlined } from '@ant-design/icons'
 import './Navbar.scss'
@@ -13,6 +13,7 @@ const scrollToSection = (id: string) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   const { useBreakpoint } = Grid
 
   const screens = useBreakpoint()
@@ -66,7 +67,14 @@ const Navbar = () => {
                 </Row>
               </Col>
               <Col>
-                <Button className='login-button' color='primary' variant='outlined'>LOGIN</Button>
+                <Button
+                  onClick={() => setIsLoginModalOpen(true)}
+                  className='login-button'
+                  color='primary'
+                  variant='outlined'
+                >
+                  LOGIN
+                </Button>
               </Col>
             </Row>
           </Col>
@@ -89,6 +97,20 @@ const Navbar = () => {
       >
         {menuItems}
       </Drawer>
+
+      <Modal open={isLoginModalOpen} footer={null} closeIcon={null} onCancel={() => setIsLoginModalOpen(false)}>
+        <span>Username</span>
+        <Input className='mb-4'/>
+        <span>Password</span>
+        <Input.Password className='mb-4'/>
+        <Row justify='end'>
+          <Col>
+            <Button type='primary' onClick={() => {
+              setIsLoginModalOpen(false)
+            }}>Submit</Button>
+          </Col>
+        </Row>
+      </Modal>
     </>
   );
 }
