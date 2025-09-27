@@ -4,6 +4,10 @@ untuk run
 `npm run dev`
 untuk test
 `npm run test`
+
+versi deployed bisa diakses di:
+https://keda-tech-test-c0z1whzby-satyowicaksanas-projects.vercel.app/
+
 Tech stacks dan alasan:
 
 -   **Vite:** Digunakan sebagai build tool dan dev server yang cepat dengan Hot Module Replacement.
